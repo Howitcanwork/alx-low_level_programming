@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "your commit msg : "
+read msg 
+git add .
+git commit -m "$mag"
+git push 
