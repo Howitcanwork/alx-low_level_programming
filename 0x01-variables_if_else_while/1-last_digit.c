@@ -3,7 +3,9 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * description :get the last digit of a number
+ *
+ *description :get the last digit of a number
+
  * Return : always return 0
  */
 int main(void)
@@ -18,7 +20,7 @@ int main(void)
 
 
 	if (ld > 5)
-		printf("Last digit of %d is %d and is grater than 5\n", n, ld);
+		printf("Last digit of %d is %d and is greater than 5\n", n, ld);
 	else if (ld == 0)
 		printf("Last digit of %d is %d and is 0\n", n, ld);
 	else if (ld < 6 && ld != 0)
