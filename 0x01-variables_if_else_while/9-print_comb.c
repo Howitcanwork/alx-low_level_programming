@@ -5,11 +5,13 @@
  */
 int main(void)
 {
-	int x = '0';
+	int x;
 
-	while (x < '10')
+x = '0';
+
+	while (x <= '9')
 	{
-		putchar(x + '0')
+		putchar(x)
 			if (x != '9')
 			{
 				putchar(',');
