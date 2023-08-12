@@ -17,7 +17,7 @@ int main(void)
 				{
 					putchar(c);
 					putchar(i);
-					pitchar(k);
+					putchar(k);
 
 					if (c != '7')
 					{
