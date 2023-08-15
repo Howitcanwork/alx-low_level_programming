@@ -1,4 +1,3 @@
-#include <main.h>
 #include <unistd.h>
 /**
  * print_alphabet - Entry point
