@@ -1,8 +1,9 @@
 #include "main.h"
+#include <ctype>
 /**
  * _isalpha - Entry point
  * @c: character in
- * Return: 1 if c is a letter, lowercase or uppercase , 0 if not
+ * Return: 1 if c is a letter , 0 if not
  */
 int _isalpha(int c)
 {
