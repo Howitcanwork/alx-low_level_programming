@@ -5,8 +5,11 @@
  */
 void times_table(void)
 {
-	int a = 0, b , c;
+	int a = 0;
+	int b;
+	int c;
 
+	a = 0;
 	while (a < 10)
 	{
 		b = 0;
