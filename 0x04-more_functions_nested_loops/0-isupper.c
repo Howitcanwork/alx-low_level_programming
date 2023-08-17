@@ -1,9 +1,8 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
- * _isupper - Entry point
- * @c: character in
+ * _isupper - check the uppercase
+ * @c:input for alphabet
  * Return: Returns 1 if c is uppercase , 0 otherwise
  */
 int _isupper(int c)
