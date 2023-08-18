@@ -25,7 +25,8 @@ void print_triangle(int size)
 		printf("\n");
 		m++;
 		}
+	}
 	if (size <= 0)
 		printf("\n");
-	}
+
 }
