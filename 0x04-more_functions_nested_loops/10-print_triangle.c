@@ -2,7 +2,9 @@
 /**
  * print_triangle - function
  * @size: input
+ * Return: void
  */
+
 void print_triangle(int size)
 {
 	int i;
@@ -10,6 +12,7 @@ void print_triangle(int size)
 	int m;
 
 	m = 1;
+
 	for (i = 0; i < size; i++)
 	{
 		for (j = 0; j < size; j++)
@@ -22,9 +25,9 @@ void print_triangle(int size)
 			{
 				printf("#");
 			}
+		}
 		printf("\n");
 		m++;
-		}
 	}
 	if (size <= 0)
 		printf("\n");
