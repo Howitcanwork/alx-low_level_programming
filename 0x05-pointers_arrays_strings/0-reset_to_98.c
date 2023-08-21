@@ -2,10 +2,9 @@
 /**
  * reset_to_98 - function
  * @n: pointer
+ * Return: 0
  */
 void reset_to_98(int *n)
 {
-	int n = 98;
-
 	*n = 98;
 }
