@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print array - function
+ * print_array - function
  * @a: integer
  * @n: integer
  * Return: 0
