@@ -3,8 +3,8 @@
 #include <time.h>
 
 /**
- * main - Entry point
- * Return: 0
+ * main - generate random valid password
+ * Return: zero
  */
 int main(void)
 {
