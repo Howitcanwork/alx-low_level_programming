@@ -4,7 +4,7 @@
  * @c: input
  * Return: pointer
  */
-char *rot13(char *)
+char *rot13(char *c)
 {
 	int i = 0;
 	
