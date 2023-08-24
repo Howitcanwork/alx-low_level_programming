@@ -4,8 +4,10 @@
  * infinite_add - check the code for Holberton School students.
  * @n1: input
  * @n2: input
+ * @r: input
+ *
  * @size_r: input
- * Return: pointer.
+ * Return: r
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
