@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * leet - function
- * @n: input 
+ * @n: input
  * Return: n
  */
 char *leet(char *n)
