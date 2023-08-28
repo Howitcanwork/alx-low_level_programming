@@ -2,7 +2,7 @@
 
 /**
  * *_memset - function
- * @s: pointer 
+ * @s: pointer
  * @n: the num of byte to fill
  * @b: constant byte
  * Return: pointer
