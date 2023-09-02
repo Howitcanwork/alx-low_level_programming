@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * *_strchr - function
  * @s: string
@@ -16,5 +17,5 @@ char *_strchr(char *s, char c)
 	}
 	if (c == '\0')
 		return (s);
-return (NULL);
+return (0);
 }
