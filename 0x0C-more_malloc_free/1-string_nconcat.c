@@ -7,34 +7,42 @@
  * @n:  input
  * Return: pointer.
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-        char *s;
-        unsigned int i = 0, j = 0, len1 = 0, len2 = 0;
+	unsigned int length;
+	unsigned int i, j;
+	char *ptr;
 
-        while (s1 && s1[len1])
-                len1++;
-        while (s2 && s2[len2])
-                len2++;
+	length = n;
 
-        if (n < len2)
-                s = malloc(sizeof(char) * (len1 + n + 1));
-        else
-                s = malloc(sizeof(char) * (len1 + len2 + 1));
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	/* count the length of string s1 */
+	for (i = 0; *(s1 + i) != '\0'; i++)
+		length++;
 
-        if (!s)
-                return (NULL);
-        while (i < len1)
-        {
-                s[i] = s1[i];
-                i++;
-        }
-        while (n < len2 && i < (len1 + n))
-                s[i++] = s2[j++];
-        while (n >= len2 && j < (len1 + len2))
-                s[i++] = s2[j++];
+	/* added 1 to length for the \0 character at the end */
+	ptr = malloc((length + 1) * sizeof(char));
+	if (ptr == NULL)
+		return (NULL);
 
-        s[i] = '\0';
-
-        return (s);
+	/* add string s1 to the new string */
+	j = 0;
+	for (i = 0; *(s1 + i) != '\0'; i++)
+	{
+		ptr[j] = *(s1 + i);
+		j++;
+	}
+	/* add string s2 to the new string */
+	for (i = 0; *(s2 + i) != '\0' && i < n; i++)
+	{
+		ptr[j] = *(s2 + i);
+		j++;
+	}
+	/* add \0 to the end of the new string */
+	ptr[j] = '\0';
+	return (ptr);
 }
