@@ -18,7 +18,7 @@ int _strlen(char *s)
 
 /**
  * print_list - print a linked list
- * @p: pointer to first node
+ * @h: pointer to first node
  * Return: size of list
  */
 size_t print_list(const list_t *h)
