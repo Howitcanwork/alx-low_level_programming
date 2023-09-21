@@ -1,6 +1,0 @@
-#!/bin/bash
-echo "your commit : "
-read new
-git add .
-git commit -m "$new"
-git push
