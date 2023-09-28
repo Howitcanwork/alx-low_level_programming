@@ -31,7 +31,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int decimal = 0;
 	int str_len = 0, base = 1;
 	
-	if (!check_valid_string(b))
+	if (!string(b))
 		return (0);
 	while (b[str_len] != '\0')
 		str_len++;
