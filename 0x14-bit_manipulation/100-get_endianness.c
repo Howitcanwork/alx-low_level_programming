@@ -7,7 +7,7 @@
 int get_endianness(void)
 {
 	unsigned int lu = 1;
-	char *mu = (char *)&l;
+	char *mu = (char *)&lu;
 
 	return (*mu);
 }
